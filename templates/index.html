@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Segmentation Prediction</title>
+</head>
+<body>
+    <h2>Customer Segmentation Prediction Form</h2>
+    <form action="/predict" method="post">
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br>
+
+        <label for="ever_married">Ever Married:</label>
+        <select name="ever_married" id="ever_married">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="profession">Profession:</label>
+        <select name="profession" id="profession">
+            <option value="Healthcare">Healthcare</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Lawyer">Lawyer</option>
+            <option value="Artist">Artist</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Homemaker">Homemaker</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Executive">Executive</option>
+        </select><br>
+
+        <label for="graduated">Graduated:</label>
+        <select name="graduated" id="graduated">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select><br>
+
+        <label for="spending_score">Spending Score:</label>
+        <select name="spending_score" id="spending_score">
+            <option value="High">High</option>
+            <option value="Average">Average</option>
+            <option value="Low">Low</option>
+        </select><br>
+
+        <label for="var_1">Var 1:</label>
+        <select name="var_1" id="var_1">
+            <option value="Cat_4">Cat_4</option>
+            <option value="Cat_6">Cat_6</option>
+            <option value="Cat_7">Cat_7</option>
+            <option value="Cat_3">Cat_3</option>
+            <option value="Cat_1">Cat_1</option>
+            <option value="Cat_2">Cat_2</option>
+            <option value="Cat_5">Cat_5</option>
+        </select><br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" min="0" required><br>
+
+        <label for="work_experience">Work Experience:</label>
+        <input type="number" name="work_experience" id="work_experience" min="0" required><br>
+
+        <label for="family_size">Family Size:</label>
+        <input type="number" name="family_size" id="family_size" min="0" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
